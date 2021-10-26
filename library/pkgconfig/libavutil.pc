@@ -1,0 +1,14 @@
+prefix=/c/archive/nodetime-windows/x64/basis
+exec_prefix=${prefix}
+libdir=/c/archive/nodetime-windows/x64/basis/lib
+includedir=/c/archive/nodetime-windows/x64/basis/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.22.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: user32.lib bcrypt.lib
+Cflags: -I${includedir}
